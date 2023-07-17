@@ -1,18 +1,157 @@
 body {
     background-color: ivory;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
 }
 
-header {
+/* Navigation Bar */
+
+
+.logo {
+    display: inline-flex;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+/* Reset default styles */
+nav, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Style the nav bar */
+  nav {
     background-color: #333;
+  }
+  
+  /* Style the list items */
+  nav ul li {
+    display: inline-block;
+    
+  }
+  
+  /* Style the links */
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
     color: #fff;
-    padding: 5px;
+    text-decoration: none;
+  }
+  
+  /* Change link styles on hover */
+  nav ul li a:hover {
+    background-color: #555;
+  }
+
+.hero {
+    background-image: url("..img/headshot.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    
-    
-    
+    color: black;
+}
+
+.hero .hero-content {
+    padding: 2rem;
+}
+
+.hero .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-content {
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+}
+
+.about-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-content a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.about-content a.btn:hover {
+  background-color: #555;
+}
+
+
+.projects-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projects-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.project:hover {
+  background-color: #e5e5e5;
+}
+
+.project h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.project a.btn:hover {
+  background-color: #555;
 }
