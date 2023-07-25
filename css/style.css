@@ -1,5 +1,5 @@
 body {
-    background-color: ivory;
+    background: linear-gradient(180deg, rgba(31, 6, 62, 0.00) 0%, #18063E 100%);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
@@ -27,27 +27,75 @@ nav, ul {
   
   /* Style the nav bar */
   nav {
-    background-color: #333;
+    background: linear-gradient(180deg, #F1F0F3 0%, rgba(241, 240, 243, 0.00) 100%);
+    width: 100%;
+    height: 90px;
+    flex-shrink: 0;
   }
   
   /* Style the list items */
   nav ul li {
     display: inline-block;
+    padding: 10px 20px;
     
   }
   
   /* Style the links */
   nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    color: black;
     text-decoration: none;
   }
   
   /* Change link styles on hover */
   nav ul li a:hover {
-    background-color: #555;
+    color: goldenrod;
   }
+
+  .nav-others {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  
+  .nav-others li {
+    float: left;
+  }
+  
+  .nav-others li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  
+  .nav-resume {
+    display: inline;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-resume li {
+    float: left;
+  }
+
+  .nav-resume li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration:none;
+    color: #333;
+    border: 1px solid #333; 
+    background-origin: padding-box;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
 
 .hero {
     background-image: url("..img/headshot.jpg");
@@ -66,11 +114,22 @@ nav, ul {
 }
 
 .hero .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000;
+  font-family: Ebrima;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
+.hero .hero-content p {
+  color: #FFF;
+font-family: Ebrima;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 .about-content {
   max-width: 800px; /* Set a maximum width for the content */
   margin: 0 auto; /* Center the content horizontally */
@@ -154,4 +213,42 @@ nav, ul {
 
 .project a.btn:hover {
   background-color: #555;
+}
+
+
+footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  display: block;
+  list-style: none;
+  float: left;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  display: block;
+  list-style: none;
+  float: right;
+}
+
+.social-links a,
+.contact-info p {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
 }
