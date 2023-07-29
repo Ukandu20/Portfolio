@@ -1,0 +1,148 @@
+ .carousel-control button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.carousel-control button:focus {
+  outline: none;
+}
+
+.carousel-control-previous {
+  position: relative;
+}
+
+.carousel-control-previous::before {
+  border: solid;
+  border-width: 0 5px 5px 0;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  left: -30px;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  transform: rotate(135deg) translateY(-50%);
+  width: 5px;
+}
+
+.carousel-control-previous:hover::before {
+  left: -40px;
+}
+
+.carousel-control-next {
+  position: relative;
+}
+
+.carousel-control-next::before {
+  border: solid;
+  border-width: 0 5px 5px 0;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  padding: 10px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
+}
+
+.carousel-control-next:hover::before {
+  right: -40px;
+}
+
+.carousel-control-next::after {
+  border: solid;
+  border-width: 0 5px 5px 0;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  padding: 10px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
+} */
+
+.projects-container-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  bottom: -15px;
+  padding: 0;
+  position: absolute;
+}
+
+.projects-container-nav li {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 16px;
+}
+
+.projects-container-nav li.project-selected {
+  background-color: #01D1C6;
+} */
+
+
+
+
+
+.carousel-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual-btn:hover {
+  background: #01D1C6;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0 ;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20% ;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40% ;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60% ;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80% ;
+}
+
+
+.carousel-auto {
+  position: absolute;
+} 
