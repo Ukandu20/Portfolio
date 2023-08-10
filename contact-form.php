@@ -9,8 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $headers = "From:" .$fname. "<".$email.">";
     
-    mail($recipient, $subject, $message, $headers);
-    or die("Error!");
+    mail($recipient, $subject, $message, $headers) or die("Error!");
     
     echo "Message sent successfully!";
 }
