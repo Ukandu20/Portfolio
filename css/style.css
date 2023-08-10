@@ -4,8 +4,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap');
 
 
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  /* Modify navigation bar styles for small screens */
+  nav {
+    height: 60px;
+  }
+
+  nav ul li {
+    padding: 5px 10px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 80px; /* Reduce logo size for small screens */
+  }
+
+  .nav-resume li a {
+    padding: 5px 10px;
+  }
+  
+  
+}
+
+/* Extr Small Devices */
+@media (min-width: 1px) and (max-width: 480px) {
+
+  body {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  /* Modify navigation bar styles for small screens */
+  nav {
+    height: 60px;
+  }
+
+  nav ul li {
+    padding: 5px 10px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 80px; /* Reduce logo size for small screens */
+  }
+
+  .nav-resume li a {
+    padding: 5px 10px;
+  }
+  
+}
+
+/* Small Devices */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 15px; /* Adjust font size for small devices */
+  }
+  
+}
+
+/* Medium Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* Large Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* Extr Large Devices */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  
+}
+
+/* Desktop */
+@media(min-width: 1920px) {
+  
+}
+
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: nue Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
@@ -123,20 +212,28 @@ nav, ul {
 
 
 .footer-container {
+  background-color: #032524;
   color: #fff;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-
+  padding: 10px;
+  text-align: left;
 }
 
+
+.social-links p {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: small;
+  
+}
 .social-links img {
   width: 20px;
   height: 20px;
   margin: 0 10px;
-  display: block;
+  display: inline-block;
   list-style: none;
-  float: left;
+  vertical-align: middle;
 }
 
 .contact-info p {
@@ -152,6 +249,8 @@ nav, ul {
   text-decoration: none;
 }
 
-.social-links a:hover {
+.social-links img:hover {
   opacity: 0.8;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
